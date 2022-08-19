@@ -15,7 +15,12 @@ public class ItemRegistry {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CorruptedBotany.MOD_ID);
 
+    //essence
+
     public static final RegistryObject<Item> MINESSENCE = ITEMS.register("minuscule_essence",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+    public static final RegistryObject<Item> LESSERSSENCE = ITEMS.register("lesser_essence",
             () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
     // boss seeds/summons
