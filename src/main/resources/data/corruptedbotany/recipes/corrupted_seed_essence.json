@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#D#",
+    "gKg",
+    "#D#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:moss_block"
+    },
+    "D": {
+      "item": "corruptedbotany:minuscule_essence"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "K": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "corruptedbotany:corrupted_seed",
+    "count": 1
+  }
+}
