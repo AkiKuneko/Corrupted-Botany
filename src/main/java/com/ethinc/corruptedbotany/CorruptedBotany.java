@@ -75,7 +75,7 @@ public class CorruptedBotany
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent)
         {
             // Register a new block here
-            LOGGER.info("HELLO from Register Block");
+            LOGGER.info("Hello from the Earth Inc crew! (we're registering our blocks)");
         }
     }
 }
