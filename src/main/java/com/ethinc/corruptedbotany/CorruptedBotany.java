@@ -1,4 +1,4 @@
-package com.orho.corruptedbotany;
+package com.ethinc.corruptedbotany;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
