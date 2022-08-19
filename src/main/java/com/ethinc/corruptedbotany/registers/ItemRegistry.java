@@ -1,7 +1,7 @@
 package com.ethinc.corruptedbotany.registers;
 
 import com.ethinc.corruptedbotany.CorruptedBotany;
-import net.minecraft.world.item.CreativeModeTab;
+import com.ethinc.corruptedbotany.api.CBCreativeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,7 +14,7 @@ public class ItemRegistry {
             DeferredRegister.create(ForgeRegistries.ITEMS, CorruptedBotany.MOD_ID);
 
     public static final RegistryObject<Item> MINESSENCE = ITEMS.register("minuscule_essence",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
 
     public static void register(IEventBus eventBus) {
