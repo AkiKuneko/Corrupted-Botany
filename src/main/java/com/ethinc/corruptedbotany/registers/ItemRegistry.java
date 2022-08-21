@@ -24,6 +24,18 @@ public class ItemRegistry {
     public static final RegistryObject<Item> LESSERSSENCE = ITEMS.register("lesser_essence",
             () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
+    public static final RegistryObject<Item> CORRUPTESSENCE = ITEMS.register("corrupted_essence",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+    public static final RegistryObject<Item> GREATCORRUPTESSENCE = ITEMS.register("greater_corrupted_essence",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+    public static final RegistryObject<Item> CORRUPTCONCENTRATE = ITEMS.register("corrupt_concentrate",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+    public static final RegistryObject<Item> EVILCONCENTRATE = ITEMS.register("evil_concentrate",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
     // boss seeds/summons
 
     public static final RegistryObject<Item> CORRUPTED_SEED = ITEMS.register("corrupted_seed",

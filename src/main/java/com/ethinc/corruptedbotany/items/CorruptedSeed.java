@@ -6,6 +6,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
@@ -29,11 +30,14 @@ public class CorruptedSeed extends Item {
         Zombie zombie = EntityType.ZOMBIE.create(level);
         if(blockstate.is(Blocks.GRASS_BLOCK)){
             System.out.println("grass");
+            assert zombie != null;
             level.addFreshEntity(zombie);
-            return InteractionResult.CONSUME;
+            ItemStack itemstack = new ItemStack(this.asItem());
+            itemstack.shrink(1);
         } else {
             System.out.println("nope");
             return InteractionResult.PASS;
         }
+        return null;
     }
 }
