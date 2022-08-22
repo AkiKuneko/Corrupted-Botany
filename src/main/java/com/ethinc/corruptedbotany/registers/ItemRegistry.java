@@ -38,7 +38,7 @@ public class ItemRegistry {
 
     // boss seeds/summons
 
-    public static final RegistryObject<Item> CORRUPTED_SEED = ITEMS.register("corrupted_seed",
+    public static final RegistryObject<CorruptedSeed> CORRUPTED_SEED = ITEMS.register("corrupted_seed",
             () -> new CorruptedSeed(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).rarity(Rarity.UNCOMMON).stacksTo(1)));
 
 

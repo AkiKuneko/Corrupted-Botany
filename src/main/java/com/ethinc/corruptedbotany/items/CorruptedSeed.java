@@ -37,8 +37,12 @@ public class CorruptedSeed extends Item {
         Zombie zombie = new Zombie(EntityType.ZOMBIE, level);
         zombie.setPos(Vec3.atCenterOf(blockpos));
         if(blockstate.is(Blocks.GRASS_BLOCK)){
+            /*
+            Make it plant and then grow fast with partical effects on grass
+            This needs to be remade with an actual plant
+             */
             level.addFreshEntity(zombie);
-            level.playSound(blockpos.getX(),blockpos.getY(),blockpos.getY(),SoundEvents.STONE_BREAK, GameRules.Category.MOBS,1,1,1);
+            level.playSound(null, blockpos.getX(), blockpos.getZ(), blockpos.getY(), SoundEvents.ZOMBIE_DEATH, SoundSource.HOSTILE, 1.0F, 1.0F);
             ItemStack itemstack = p_41427_.getItemInHand();
             itemstack.shrink(1);
             return InteractionResult.SUCCESS;
