@@ -4,7 +4,6 @@ import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
 import com.ethinc.corruptedbotany.items.CorruptedSeed;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
