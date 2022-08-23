@@ -1,18 +1,23 @@
 package com.ethinc.corruptedbotany;
 
+import com.ethinc.corruptedbotany.entities.client.renders.LesserZombiePlantEntityRender;
 import com.ethinc.corruptedbotany.registers.BlockRegistry;
+import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -22,13 +27,9 @@ import org.slf4j.Logger;
 
 import java.util.stream.Collectors;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(CorruptedBotany.MOD_ID)
-
-
 public class CorruptedBotany
 {
-
     public static final String MOD_ID = "corruptedbotany";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -39,6 +40,7 @@ public class CorruptedBotany
 
         ItemRegistry.register(eventBus);
         BlockRegistry.register(eventBus);
+        EntityRegistry.register(eventBus);
 
 
 
@@ -53,10 +55,18 @@ public class CorruptedBotany
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
+        // Register Client items
+        eventBus.addListener(this::clientSetup);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
+
+    private void clientSetup(final FMLClientSetupEvent event)
+    {
+        EntityRenderers.register(EntityRegistry.LESSERZOMBIE.get(), LesserZombiePlantEntityRender::new);
+    }
+
 
     private void setup(final FMLCommonSetupEvent event)
     {
