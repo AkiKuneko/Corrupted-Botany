@@ -4,6 +4,7 @@ import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
 import com.ethinc.corruptedbotany.items.CorruptedSeed;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +15,21 @@ public class ItemRegistry {
 
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, CorruptedBotany.MOD_ID);
+
+    //lesser seeds
+
+    public static final RegistryObject<Item> LESSER_ZOMBIE_SEEDS = ITEMS.register("lesser_zombie_seed",
+            () -> new ItemNameBlockItem(BlockRegistry.LESSER_ZOMBIE_PLANT.get(),
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+    //corrupted seeds
+
+    // greater_corrupted_seeds
+
+    //corrupt_concentrated seeds
+
+    //evil_concentrated seeds
+
 
     //essence
 

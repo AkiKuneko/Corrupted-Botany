@@ -1,7 +1,10 @@
 package com.ethinc.corruptedbotany;
 
+import com.ethinc.corruptedbotany.registers.BlockRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +38,8 @@ public class CorruptedBotany
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ItemRegistry.register(eventBus);
+        BlockRegistry.register(eventBus);
+
 
 
 
@@ -55,6 +60,7 @@ public class CorruptedBotany
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_ZOMBIE_PLANT.get(), RenderType.cutout());
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
