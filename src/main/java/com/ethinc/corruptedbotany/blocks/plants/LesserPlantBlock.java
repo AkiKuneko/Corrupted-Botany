@@ -44,10 +44,11 @@ public class LesserPlantBlock extends CropBlock {
     public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
             Zombie zombie = new Zombie(EntityType.ZOMBIE, level);
             zombie.setPos(Vec3.atCenterOf(pos));
-            //uuuhhh
-            if(getAgeProperty().equals(5)){
+            //spawns on break if plant is maxed only works in survival
+            if(willHarvest){
                 level.addFreshEntity(zombie);
             }
+
 
             return super.onDestroyedByPlayer(state, level, pos, player, willHarvest, fluid);
     }
