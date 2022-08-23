@@ -47,10 +47,14 @@ public class LesserPlantBlock extends CropBlock {
             //spawns on break if plant is maxed only works in survival
             if(willHarvest){
                 level.addFreshEntity(zombie);
+
             }
 
 
             return super.onDestroyedByPlayer(state, level, pos, player, willHarvest, fluid);
     }
+    /*
+    Need to change plant grow speed overwriting the randomTick method
+     */
 }
 
