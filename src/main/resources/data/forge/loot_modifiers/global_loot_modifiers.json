@@ -2,7 +2,9 @@
   "replace": false,
   "entries": [
     "corruptedbotany:min_ess_zombie",
-    "corruptedbotany:min_ess_creeper"
+    "corruptedbotany:min_ess_creeper",
+    "corruptedbotany:min_ess_skeleton",
+    "corruptedbotany:min_ess_spider"
 
   ]
 }

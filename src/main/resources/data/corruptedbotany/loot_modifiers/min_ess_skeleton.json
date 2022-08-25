@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/skeleton"
+    }
+  ],
+  "addition": "corruptedbotany:minuscule_essence",
+  "type": "corruptedbotany:min_ess_inj"
+}
