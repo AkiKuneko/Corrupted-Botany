@@ -2,6 +2,9 @@
 
   "item.corruptedbotany.minuscule_essence": "Minuscule Essence",
   "item.corruptedbotany.corrupted_seed": "Corrupted Seed",
-  "block.corruptedbotany.lesser_zombie_plant": "Lesser Zombie Plant"
+  "item.corruptedbotany.lesser_zombie_seed": "Lesser Zombie Seeds",
+  "item.corruptedbotany.corrupted_bone_meal": "Corrupted Bone Meal",
+
+  "block.corruptedbotany.lesser_soil": "Lesser Soil"
 
 }

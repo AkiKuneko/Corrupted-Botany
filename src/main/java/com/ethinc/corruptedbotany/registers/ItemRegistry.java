@@ -57,6 +57,12 @@ public class ItemRegistry {
             () -> new CorruptedSeed(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).rarity(Rarity.UNCOMMON).stacksTo(1)));
 
 
+    //other
+    public static final RegistryObject<Item> CORRUPTED_BONE_MEAL = ITEMS.register("corrupted_bone_meal",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

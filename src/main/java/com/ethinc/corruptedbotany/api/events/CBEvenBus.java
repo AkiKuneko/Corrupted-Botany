@@ -3,7 +3,7 @@ package com.ethinc.corruptedbotany.api.events;
 import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.events.lootinjection.MinEssenceInject;
 import com.ethinc.corruptedbotany.entities.LesserZombiePlantEntity;
-import com.ethinc.corruptedbotany.entities.client.model.LesserZombiePlantEntityModle;
+import com.ethinc.corruptedbotany.entities.client.model.LesserZombiePlantEntityModel;
 import com.ethinc.corruptedbotany.entities.client.renders.LesserZombiePlantEntityRender;
 import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import net.minecraft.resources.ResourceLocation;
@@ -33,7 +33,7 @@ public class CBEvenBus {
 
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event){
-        event.registerLayerDefinition(LesserZombiePlantEntityModle.LAYER_LOCATION, LesserZombiePlantEntityModle::createBodyLayer);
+        event.registerLayerDefinition(LesserZombiePlantEntityModel.LAYER_LOCATION, LesserZombiePlantEntityModel::createBodyLayer);
     }
 
     @SubscribeEvent

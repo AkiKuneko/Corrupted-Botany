@@ -1,7 +1,7 @@
 package com.ethinc.corruptedbotany.entities.client.renders;
 
 import com.ethinc.corruptedbotany.CorruptedBotany;
-import com.ethinc.corruptedbotany.entities.client.model.LesserZombiePlantEntityModle;
+import com.ethinc.corruptedbotany.entities.client.model.LesserZombiePlantEntityModel;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
@@ -12,7 +12,7 @@ public class LesserZombiePlantEntityRender extends MobRenderer {
             new ResourceLocation(CorruptedBotany.MOD_ID, "textures/entities/lesser_zombie.png");
 
     public LesserZombiePlantEntityRender(EntityRendererProvider.Context context) {
-        super(context, new LesserZombiePlantEntityModle<>(context.bakeLayer(LesserZombiePlantEntityModle.LAYER_LOCATION)), 1.0F);
+        super(context, new LesserZombiePlantEntityModel<>(context.bakeLayer(LesserZombiePlantEntityModel.LAYER_LOCATION)), 1.0F);
     }
 
 

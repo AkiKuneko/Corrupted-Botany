@@ -17,7 +17,7 @@ import net.minecraft.util.Mth;
 
 
 
-public class LesserZombiePlantEntityModle<T extends LesserZombiePlantEntity> extends EntityModel<T> {
+public class LesserZombiePlantEntityModel<T extends LesserZombiePlantEntity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(CorruptedBotany.MOD_ID, "lesser_zombie"), "main");
 	private final ModelPart Body;
@@ -27,7 +27,7 @@ public class LesserZombiePlantEntityModle<T extends LesserZombiePlantEntity> ext
 	private final ModelPart LeftLeg;
 	private final ModelPart Head;
 
-	public LesserZombiePlantEntityModle(ModelPart root) {
+	public LesserZombiePlantEntityModel(ModelPart root) {
 		this.Body = root.getChild("Body");
 		this.RightArm = root.getChild("RightArm");
 		this.LeftArm = root.getChild("LeftArm");
