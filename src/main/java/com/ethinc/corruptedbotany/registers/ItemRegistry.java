@@ -2,7 +2,6 @@ package com.ethinc.corruptedbotany.registers;
 
 import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
-import com.ethinc.corruptedbotany.items.CorruptedSeed;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
@@ -57,8 +56,8 @@ public class ItemRegistry {
 
     // boss seeds/summons
 
-    public static final RegistryObject<CorruptedSeed> CORRUPTED_SEED = ITEMS.register("corrupted_seed",
-            () -> new CorruptedSeed(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).rarity(Rarity.UNCOMMON).stacksTo(1)));
+    public static final RegistryObject<Item> CORRUPTED_SEED = ITEMS.register("corrupted_seed",
+            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).rarity(Rarity.UNCOMMON).stacksTo(1)));
 
 
     //other
