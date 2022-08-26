@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#RL",
+    "RWR",
+    "LR#"
+  ],
+  "key": {
+    "#": {
+      "item": "corruptedbotany:lesser_essence"
+    },
+    "R": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "W": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "result": {
+    "item": "corruptedbotany:lesser_zombie_seed",
+    "count": 1
+  }
+}
