@@ -22,6 +22,10 @@ public class ItemRegistry {
             () -> new ItemNameBlockItem(BlockRegistry.LESSER_ZOMBIE_PLANT.get(),
                     new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
+    public static final RegistryObject<Item> LESSER_SKELETON_SEEDS = ITEMS.register("lesser_skeleton_seed",
+            () -> new ItemNameBlockItem(BlockRegistry.LESSER_SKELETON_PLANT.get(),
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
     //corrupted seeds
 
     // greater_corrupted_seeds

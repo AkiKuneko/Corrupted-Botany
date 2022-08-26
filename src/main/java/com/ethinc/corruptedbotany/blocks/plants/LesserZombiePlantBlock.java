@@ -5,32 +5,22 @@ import com.ethinc.corruptedbotany.registers.BlockRegistry;
 import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
-import java.util.Random;
 
-
-public class LesserPlantBlock extends CropBlock {
+public class LesserZombiePlantBlock extends CropBlock {
         public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
 
-        public LesserPlantBlock(Properties properties) {
+        public LesserZombiePlantBlock(Properties properties) {
             super(properties);
         }
 
