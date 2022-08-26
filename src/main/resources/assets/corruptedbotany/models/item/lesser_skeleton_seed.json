@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "corruptedbotany:item/lesser_zombie_seed"
+    "layer0": "corruptedbotany:item/lesser_skeleton_seed"
   }
 }
