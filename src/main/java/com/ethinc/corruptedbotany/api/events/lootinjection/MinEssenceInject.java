@@ -26,10 +26,11 @@ public class MinEssenceInject extends LootModifier {
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
 
-        if(context.getRandom().nextFloat() > 0.85F)
+        if(context.getRandom().nextFloat() > 0.0F)
         {
-            generatedLoot.add(new ItemStack(addition, context.getRandom().nextInt(2)));
+            generatedLoot.add(new ItemStack(addition, context.getRandom().nextInt(2)+1));
         }
+
 
         return generatedLoot;
     }
