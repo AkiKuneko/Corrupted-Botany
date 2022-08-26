@@ -65,12 +65,14 @@ public class CorruptedBotany
     private void clientSetup(final FMLClientSetupEvent event)
     {
         EntityRenderers.register(EntityRegistry.LESSERZOMBIE.get(), LesserZombiePlantEntityRender::new);
+
     }
 
 
     private void setup(final FMLCommonSetupEvent event)
     {
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_ZOMBIE_PLANT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_SKELETON_PLANT.get(), RenderType.cutout());
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
