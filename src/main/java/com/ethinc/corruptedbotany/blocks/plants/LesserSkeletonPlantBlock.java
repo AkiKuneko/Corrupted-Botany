@@ -5,6 +5,7 @@ import com.ethinc.corruptedbotany.registers.BlockRegistry;
 import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -17,10 +18,10 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.Vec3;
 
 
-public class LesserZombiePlantBlock extends CropBlock {
+public class LesserSkeletonPlantBlock extends CropBlock {
         public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
 
-        public LesserZombiePlantBlock(Properties properties) {
+        public LesserSkeletonPlantBlock(Properties properties) {
             super(properties);
         }
 
@@ -31,7 +32,7 @@ public class LesserZombiePlantBlock extends CropBlock {
 
         @Override
         protected ItemLike getBaseSeedId() {
-            return ItemRegistry.LESSER_ZOMBIE_SEEDS.get();
+            return ItemRegistry.LESSER_SKELETON_SEEDS.get();
         }
 
         @Override
@@ -41,11 +42,11 @@ public class LesserZombiePlantBlock extends CropBlock {
 
     @Override
     public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
-        LesserZombiePlantEntity zombie = new LesserZombiePlantEntity(EntityRegistry.LESSERZOMBIE.get(), level);
-            zombie.setPos(Vec3.atCenterOf(pos));
+        LesserZombiePlantEntity skeleton = new LesserZombiePlantEntity(EntityType.SKELETON, level);
+            skeleton.setPos(Vec3.atCenterOf(pos));
             //spawns on break if plant is maxed only works in survival
             if(willHarvest){
-                level.addFreshEntity(zombie);
+                level.addFreshEntity(skeleton);
 
             }
 

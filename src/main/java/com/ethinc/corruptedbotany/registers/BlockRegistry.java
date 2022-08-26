@@ -2,19 +2,14 @@ package com.ethinc.corruptedbotany.registers;
 
 import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
-import com.ethinc.corruptedbotany.blocks.plants.LesserPlantBlock;
-import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
+import com.ethinc.corruptedbotany.blocks.plants.LesserZombiePlantBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GrowingPlantBlock;
-import net.minecraft.world.level.block.GrowingPlantHeadBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,8 +32,11 @@ public class BlockRegistry {
 
     //plant blocks lesser
 
-    public static final RegistryObject<LesserPlantBlock> LESSER_ZOMBIE_PLANT = registerBlockWithoutBlockItem("lesser_zombie_plant",
-            () -> new LesserPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+    public static final RegistryObject<LesserZombiePlantBlock> LESSER_ZOMBIE_PLANT = registerBlockWithoutBlockItem("lesser_zombie_plant",
+            () -> new LesserZombiePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<LesserZombiePlantBlock> LESSER_SKELETON_PLANT = registerBlockWithoutBlockItem("lesser_skeleton_plant",
+            () -> new LesserZombiePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
 
 
