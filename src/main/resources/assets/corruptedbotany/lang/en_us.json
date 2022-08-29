@@ -6,10 +6,21 @@
   "item.corruptedbotany.corrupted_seed": "Corrupted Seed",
   "item.corruptedbotany.lesser_zombie_seed": "Lesser Zombie Seeds",
   "item.corruptedbotany.lesser_skeleton_seed": "Lesser Skeleton Seeds",
+<<<<<<< Updated upstream
+=======
+
+  "item.corruptedbotany.corrupted_zombie_seed": "Corrupted Zombie Seeds",
+  "item.corruptedbotany.corrupted_skeleton_seed": "Corrupted Skeleton Seeds",
+
+>>>>>>> Stashed changes
   "item.corruptedbotany.corrupted_bone_meal": "Corrupted Bone Meal",
   "item.corruptedbotany.miasma_disc": "Miasma Disc",
   "item.corruptedbotany.miasma_disc.desc": "Miasma by ImOrthodox",
 
 
+<<<<<<< Updated upstream
   "block.corruptedbotany.lesser_soil": "Lesser Soil"
+=======
+
+>>>>>>> Stashed changes
 }
