@@ -5,6 +5,7 @@ import com.ethinc.corruptedbotany.api.CBCreativeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -72,6 +73,11 @@ public class ItemRegistry {
     //other
     public static final RegistryObject<Item> CORRUPTED_BONE_MEAL = ITEMS.register("corrupted_bone_meal",
             () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
+    //disc's
+    public static final RegistryObject<Item> MIASMADISC = ITEMS.register("miasma_disc",
+            () -> new RecordItem(4, SoundRegistry.MIASMA,
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).stacksTo(1)));
 
 
 

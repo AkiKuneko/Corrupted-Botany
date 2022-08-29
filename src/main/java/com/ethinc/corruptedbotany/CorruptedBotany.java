@@ -5,6 +5,7 @@ import com.ethinc.corruptedbotany.entities.client.renders.LesserZombiePlantEntit
 import com.ethinc.corruptedbotany.registers.BlockRegistry;
 import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
+import com.ethinc.corruptedbotany.registers.SoundRegistry;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -41,6 +42,7 @@ public class CorruptedBotany
         ItemRegistry.register(eventBus);
         BlockRegistry.register(eventBus);
         EntityRegistry.register(eventBus);
+        SoundRegistry.register(eventBus);
 
 
 
