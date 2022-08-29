@@ -34,6 +34,10 @@ public class ItemRegistry {
             () -> new ItemNameBlockItem(BlockRegistry.CORRUPTED_SKELETON_PLANT.get(),
                     new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
+    public static final RegistryObject<Item> CORRUPTED_CREEPER_SEEDS = ITEMS.register("corrupted_creeper_seed",
+            () -> new ItemNameBlockItem(BlockRegistry.CORRUPTED_CREEPER_PLANT.get(),
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
     //corrupted seeds
 
     // greater_corrupted_seeds
