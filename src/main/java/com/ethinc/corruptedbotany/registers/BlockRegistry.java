@@ -52,6 +52,9 @@ public class BlockRegistry {
     public static final RegistryObject<CorruptedCreeperPlantBlock> CORRUPTED_CREEPER_PLANT = registerBlockWithoutBlockItem("corrupted_creeper_plant",
             () -> new CorruptedCreeperPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
+    public static final RegistryObject<CorruptedSpiderPlantBlock> CORRUPTED_SPIDER_PLANT = registerBlockWithoutBlockItem("corrupted_spider_plant",
+            () -> new CorruptedSpiderPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
     public static final RegistryObject<LesserCorruptedPlantBlock> LESSER_CORRUPTED_PLANT = registerBlockWithoutBlockItem("lesser_corrupted_plant",
             () -> new LesserCorruptedPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 

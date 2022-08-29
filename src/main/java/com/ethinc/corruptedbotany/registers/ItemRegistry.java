@@ -38,6 +38,10 @@ public class ItemRegistry {
             () -> new ItemNameBlockItem(BlockRegistry.CORRUPTED_CREEPER_PLANT.get(),
                     new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
+    public static final RegistryObject<Item> CORRUPTED_SPIDER_SEEDS = ITEMS.register("corrupted_spider_seed",
+            () -> new ItemNameBlockItem(BlockRegistry.CORRUPTED_SPIDER_PLANT.get(),
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
+
     //corrupted seeds
 
     // greater_corrupted_seeds

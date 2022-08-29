@@ -6,7 +6,7 @@ import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.monster.Creeper;
+import net.minecraft.world.entity.monster.Spider;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -19,10 +19,10 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.Vec3;
 
 
-public class CorruptedCreeperPlantBlock extends CropBlock {
+public class CorruptedSpiderPlantBlock extends CropBlock {
         public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
 
-        public CorruptedCreeperPlantBlock(Properties properties) {
+        public CorruptedSpiderPlantBlock(Properties properties) {
             super(properties);
         }
 
@@ -33,7 +33,7 @@ public class CorruptedCreeperPlantBlock extends CropBlock {
 
         @Override
         protected ItemLike getBaseSeedId() {
-            return ItemRegistry.CORRUPTED_CREEPER_SEEDS.get();
+            return ItemRegistry.CORRUPTED_SPIDER_SEEDS.get();
         }
 
         @Override
@@ -43,11 +43,11 @@ public class CorruptedCreeperPlantBlock extends CropBlock {
 
     @Override
     public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
-        Creeper creeper = new Creeper(EntityType.CREEPER, level);
-            creeper.setPos(Vec3.atCenterOf(pos));
+        Spider spider = new Spider(EntityType.SPIDER, level);
+            spider.setPos(Vec3.atCenterOf(pos));
             //spawns on break if plant is maxed only works in survival
             if(willHarvest){
-                level.addFreshEntity(creeper);
+                level.addFreshEntity(spider);
 
             }
 

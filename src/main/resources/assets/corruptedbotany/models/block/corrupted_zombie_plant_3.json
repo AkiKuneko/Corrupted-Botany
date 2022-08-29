@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "corruptedbotany:block/corrupted_zombie_plant_3"
+  }
+}
