@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#RL",
+    "RWR",
+    "LR#"
+  ],
+  "key": {
+    "#": {
+      "item": "corruptedbotany:lesser_essence"
+    },
+    "R": {
+      "item": "minecraft:bone"
+    },
+    "L": {
+      "item": "minecraft:bone_block"
+    },
+    "W": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "result": {
+    "item": "corruptedbotany:lesser_skeleton_seed",
+    "count": 1
+  }
+}

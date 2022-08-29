@@ -56,8 +56,9 @@ public class ItemRegistry {
 
     // boss seeds/summons
 
-    public static final RegistryObject<Item> CORRUPTED_SEED = ITEMS.register("corrupted_seed",
-            () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).rarity(Rarity.UNCOMMON).stacksTo(1)));
+    public static final RegistryObject<Item> LESSER_CORRUPTED_SEED = ITEMS.register("lesser_corrupted_seed",
+            () -> new ItemNameBlockItem(BlockRegistry.LESSER_CORRUPTED_PLANT.get(),
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
 
     //other

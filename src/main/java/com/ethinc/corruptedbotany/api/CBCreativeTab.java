@@ -8,7 +8,7 @@ public class CBCreativeTab {
     public static final CreativeModeTab CB_MODE_TAB = new CreativeModeTab("Corrupted Botany") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ItemRegistry.CORRUPTED_SEED.get());
+            return new ItemStack(ItemRegistry.LESSER_CORRUPTED_SEED.get());
         }
     };
 }

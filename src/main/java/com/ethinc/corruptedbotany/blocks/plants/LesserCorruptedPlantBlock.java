@@ -31,7 +31,7 @@ public class LesserCorruptedPlantBlock extends CropBlock {
 
         @Override
         protected ItemLike getBaseSeedId() {
-            return ItemRegistry.CORRUPTED_SEED.get();
+            return ItemRegistry.LESSER_CORRUPTED_SEED.get();
         }
 
         @Override
