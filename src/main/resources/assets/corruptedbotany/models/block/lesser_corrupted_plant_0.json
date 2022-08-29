@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "corruptedbotany:block/lesser_corrupted_plant_0"
+  }
+}

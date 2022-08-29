@@ -74,6 +74,7 @@ public class CorruptedBotany
     {
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_ZOMBIE_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_SKELETON_PLANT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_CORRUPTED_PLANT.get(), RenderType.cutout());
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());

@@ -2,6 +2,7 @@ package com.ethinc.corruptedbotany.registers;
 
 import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
+import com.ethinc.corruptedbotany.blocks.plants.LesserCorruptedPlantBlock;
 import com.ethinc.corruptedbotany.blocks.plants.LesserSkeletonPlantBlock;
 import com.ethinc.corruptedbotany.blocks.plants.LesserZombiePlantBlock;
 import net.minecraft.world.item.BlockItem;
@@ -38,6 +39,9 @@ public class BlockRegistry {
 
     public static final RegistryObject<LesserSkeletonPlantBlock> LESSER_SKELETON_PLANT = registerBlockWithoutBlockItem("lesser_skeleton_plant",
             () -> new LesserSkeletonPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<LesserCorruptedPlantBlock> LESSER_CORRUPTED_PLANT = registerBlockWithoutBlockItem("lesser_corrupted_plant",
+            () -> new LesserCorruptedPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
 
 
