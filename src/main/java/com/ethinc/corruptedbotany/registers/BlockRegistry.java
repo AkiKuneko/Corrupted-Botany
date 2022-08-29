@@ -2,9 +2,7 @@ package com.ethinc.corruptedbotany.registers;
 
 import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
-import com.ethinc.corruptedbotany.blocks.plants.LesserCorruptedPlantBlock;
-import com.ethinc.corruptedbotany.blocks.plants.LesserSkeletonPlantBlock;
-import com.ethinc.corruptedbotany.blocks.plants.LesserZombiePlantBlock;
+import com.ethinc.corruptedbotany.blocks.plants.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -33,6 +31,10 @@ public class BlockRegistry {
             () -> new Block(BlockBehaviour.Properties.of(Material.DIRT)
                     .strength(.5f).sound(SoundType.GRAVEL)), CBCreativeTab.CB_MODE_TAB);
 
+    public static final RegistryObject<Block> CORRUPTED_SOIL = registerBlock("corrupted_soil",
+            () -> new Block(BlockBehaviour.Properties.of(Material.DIRT)
+                    .strength(.5f).sound(SoundType.GRAVEL)), CBCreativeTab.CB_MODE_TAB);
+
     //plant blocks lesser
 
     public static final RegistryObject<LesserZombiePlantBlock> LESSER_ZOMBIE_PLANT = registerBlockWithoutBlockItem("lesser_zombie_plant",
@@ -40,6 +42,12 @@ public class BlockRegistry {
 
     public static final RegistryObject<LesserSkeletonPlantBlock> LESSER_SKELETON_PLANT = registerBlockWithoutBlockItem("lesser_skeleton_plant",
             () -> new LesserSkeletonPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<CorruptedZombiePlantBlock> CORRUPTED_ZOMBIE_PLANT = registerBlockWithoutBlockItem("corrupted_zombie_plant",
+            () -> new CorruptedZombiePlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
+    public static final RegistryObject<CorruptedSkeletonPlantBlock> CORRUPTED_SKELETON_PLANT = registerBlockWithoutBlockItem("corrupted_skeleton_plant",
+            () -> new CorruptedSkeletonPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
     public static final RegistryObject<LesserCorruptedPlantBlock> LESSER_CORRUPTED_PLANT = registerBlockWithoutBlockItem("lesser_corrupted_plant",
             () -> new LesserCorruptedPlantBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
