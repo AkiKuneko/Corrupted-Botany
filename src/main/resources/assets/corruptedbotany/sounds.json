@@ -3,7 +3,8 @@
     "sounds": [
       {
         "name": "corruptedbotany:miasma",
-        "stream": true
+        "stream": true,
+        "volume": 0.3
       }
     ]
   }

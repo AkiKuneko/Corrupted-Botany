@@ -1,20 +1,15 @@
 {
   "item.corruptedbotany.minuscule_essence": "Minuscule Essence",
   "item.corruptedbotany.lesser_essence": "Lesser Essence",
-<<<<<<< Updated upstream
   "item.corruptedbotany.corrupted_essence": "Corrupted Essence",
-
-
   "item.corruptedbotany.lesser_corrupted_seed": "Lesser Corrupted Seed",
-
-
-=======
   "item.corruptedbotany.corrupted_seed": "Corrupted Seed",
->>>>>>> Stashed changes
   "item.corruptedbotany.lesser_zombie_seed": "Lesser Zombie Seeds",
   "item.corruptedbotany.lesser_skeleton_seed": "Lesser Skeleton Seeds",
   "item.corruptedbotany.corrupted_bone_meal": "Corrupted Bone Meal",
   "item.corruptedbotany.miasma_disc": "Miasma Disc",
+  "item.corruptedbotany.miasma_disc.desc": "Miasma by ImOrthodox",
+
 
   "block.corruptedbotany.lesser_soil": "Lesser Soil"
 }
