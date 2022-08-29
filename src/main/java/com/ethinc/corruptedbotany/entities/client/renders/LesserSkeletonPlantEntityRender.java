@@ -12,7 +12,7 @@ public class LesserSkeletonPlantEntityRender extends MobRenderer {
             new ResourceLocation(CorruptedBotany.MOD_ID, "textures/entities/lesser_skeleton.png");
 
     public LesserSkeletonPlantEntityRender(EntityRendererProvider.Context context) {
-        super(context, new LesserSkeletonPlantEntityModel(context.bakeLayer(LesserSkeletonPlantEntityModel.LAYER_LOCATION)), 0.5F);
+        super(context, new LesserSkeletonPlantEntityModel<>(context.bakeLayer(LesserSkeletonPlantEntityModel.LAYER_LOCATION)), 0.5F);
     }
 
 
