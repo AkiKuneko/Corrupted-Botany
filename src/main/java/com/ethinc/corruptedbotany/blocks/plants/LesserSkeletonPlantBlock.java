@@ -1,6 +1,9 @@
 package com.ethinc.corruptedbotany.blocks.plants;
 
+import com.ethinc.corruptedbotany.entities.LesserSkeletonPlantEntity;
+import com.ethinc.corruptedbotany.entities.LesserZombiePlantEntity;
 import com.ethinc.corruptedbotany.registers.BlockRegistry;
+import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
@@ -41,7 +44,7 @@ public class LesserSkeletonPlantBlock extends CropBlock {
 
     @Override
     public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
-        Skeleton skeleton = new Skeleton(EntityType.SKELETON, level);
+        LesserSkeletonPlantEntity skeleton = new LesserSkeletonPlantEntity(EntityRegistry.LESSERSKELETON.get(), level);
             skeleton.setPos(Vec3.atCenterOf(pos));
             //spawns on break if plant is maxed only works in survival
             if(willHarvest){
