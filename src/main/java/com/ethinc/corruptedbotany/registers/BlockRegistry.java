@@ -10,6 +10,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,7 +31,7 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> LESSER_SOIL = registerBlock("lesser_soil",
             () -> new Block(BlockBehaviour.Properties.of(Material.DIRT)
-                    .strength(.5f)), CBCreativeTab.CB_MODE_TAB);
+                    .strength(.5f).sound(SoundType.GRAVEL)), CBCreativeTab.CB_MODE_TAB);
 
     //plant blocks lesser
 
