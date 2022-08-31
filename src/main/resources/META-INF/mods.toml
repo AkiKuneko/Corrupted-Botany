@@ -19,7 +19,8 @@ credits="" #optional
 authors="ImOrthodox, Jzells" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-
+Plants invading from a diabolical origin have invaded.
+Control The Power Of the Corrupted Botany as it invades your world.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.corruptedbotany]] #optional
