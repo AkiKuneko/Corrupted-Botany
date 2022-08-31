@@ -5,10 +5,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
@@ -18,10 +15,20 @@ import org.jetbrains.annotations.Nullable;
 
 public class LesserSkeletonPlantEntity extends Monster {
 
-    public LesserSkeletonPlantEntity(EntityType<? extends LesserSkeletonPlantEntity> entityType, Level level) {
+    public LesserSkeletonPlantEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
     }
 
+
+    @Override
+    protected int getExperienceReward(Player player) {
+        return 2;
+    }
+
+    @Override
+    public boolean isPreventingPlayerRest(Player player) {
+        return false;
+    }
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMobAttributes()
@@ -41,6 +48,7 @@ public class LesserSkeletonPlantEntity extends Monster {
     @Override
     protected void registerGoals() {
         this.goalSelector.addGoal(1, new FloatGoal(this));
+        this.targetSelector.addGoal(1, new MeleeAttackGoal(this,1.0F, false));
 
         this.goalSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.goalSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
