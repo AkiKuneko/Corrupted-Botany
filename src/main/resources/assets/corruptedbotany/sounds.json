@@ -2,7 +2,7 @@
   "miasma_disc_sound": {
     "sounds": [
       {
-        "name": "corruptedbotany:miasma",
+        "name": "corruptedbotany:discs/miasma",
         "stream": true,
         "volume": 0.3
       }
