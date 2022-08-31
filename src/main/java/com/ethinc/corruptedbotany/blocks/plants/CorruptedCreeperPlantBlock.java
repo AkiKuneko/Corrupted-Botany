@@ -1,8 +1,6 @@
 package com.ethinc.corruptedbotany.blocks.plants;
 
-import com.ethinc.corruptedbotany.entities.LesserSkeletonPlantEntity;
 import com.ethinc.corruptedbotany.registers.BlockRegistry;
-import com.ethinc.corruptedbotany.registers.EntityRegistry;
 import com.ethinc.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;

@@ -2,7 +2,6 @@ package com.ethinc.corruptedbotany.entities;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -18,10 +17,6 @@ public class LesserZombiePlantEntity extends Monster {
     public LesserZombiePlantEntity(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
     }
-
-
-
-
 
     @Override
     protected int getExperienceReward(Player p_21511_) {
@@ -64,6 +59,4 @@ public class LesserZombiePlantEntity extends Monster {
     protected SoundEvent getAmbientSound() {
         return SoundEvents.ZOMBIE_AMBIENT;
     }
-
-
 }

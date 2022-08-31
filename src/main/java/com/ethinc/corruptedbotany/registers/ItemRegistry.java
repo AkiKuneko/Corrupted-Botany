@@ -4,7 +4,6 @@ import com.ethinc.corruptedbotany.CorruptedBotany;
 import com.ethinc.corruptedbotany.api.CBCreativeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
