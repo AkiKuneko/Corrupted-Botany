@@ -1,7 +1,7 @@
 package com.eternalive.corruptedbotany.entities.client.model;
 
 
-import com.ethinc.corruptedbotany.CorruptedBotany;
+import com.eternalive.corruptedbotany.CorruptedBotany;
 import com.eternalive.corruptedbotany.entities.LesserZombiePlantEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
