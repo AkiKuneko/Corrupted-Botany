@@ -82,11 +82,11 @@ public class ItemRegistry {
             () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
     //disc's
-    /*
+
     public static final RegistryObject<Item> MIASMADISC = ITEMS.register("miasma_disc",
             () -> new RecordItem(4, SoundRegistry.MIASMA,
-                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).stacksTo(1)));
-     */
+                    new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).stacksTo(1), 2100));
+
 
 
 
