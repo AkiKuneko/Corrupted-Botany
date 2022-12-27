@@ -16,6 +16,7 @@ public class EntityRegistry {
     public static final DeferredRegister<EntityType<?>> ENTITIES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CorruptedBotany.MOD_ID); //check again
 
+    /*
     public static final RegistryObject<EntityType<LesserZombiePlantEntity>> LESSERZOMBIE = ENTITIES.register("lesser_zombie",
             () -> EntityType.Builder.of(LesserZombiePlantEntity::new, MobCategory.MONSTER)
                     .sized(0.6F, 1.95F)
@@ -25,6 +26,7 @@ public class EntityRegistry {
             () -> EntityType.Builder.of(LesserSkeletonPlantEntity::new, MobCategory.MONSTER)
                     .sized(0.6F, 1.95F)
                     .build(new ResourceLocation(CorruptedBotany.MOD_ID, "lesser_skeleton").toString()));
+     */
 
     public static void register(IEventBus eventBus) {
         ENTITIES.register(eventBus);

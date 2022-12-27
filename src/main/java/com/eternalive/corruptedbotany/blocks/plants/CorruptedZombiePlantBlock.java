@@ -41,6 +41,7 @@ public class CorruptedZombiePlantBlock extends CropBlock {
 
     @Override
     public boolean onDestroyedByPlayer(BlockState state, Level level, BlockPos pos, Player player, boolean willHarvest, FluidState fluid) {
+       /*
         LesserSkeletonPlantEntity skeleton = new LesserSkeletonPlantEntity(EntityRegistry.LESSERSKELETON.get(), level);
             skeleton.setPos(Vec3.atCenterOf(pos));
             //spawns on break if plant is maxed only works in survival
@@ -48,6 +49,7 @@ public class CorruptedZombiePlantBlock extends CropBlock {
                 level.addFreshEntity(skeleton);
 
             }
+        */
 
 
             return super.onDestroyedByPlayer(state, level, pos, player, willHarvest, fluid);

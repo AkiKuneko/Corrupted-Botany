@@ -31,8 +31,10 @@ public class CBEvenBus {
 
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event){
+        /*
         event.put(EntityRegistry.LESSERZOMBIE.get(), LesserZombiePlantEntity.createAttributes().build());
         event.put(EntityRegistry.LESSERSKELETON.get(), LesserSkeletonPlantEntity.createAttributes().build());
+         */
     }
 
     @SubscribeEvent
@@ -43,8 +45,9 @@ public class CBEvenBus {
 
     @SubscribeEvent
     public static void registerRenders(EntityRenderersEvent.RegisterRenderers event){
+        /*
         event.registerEntityRenderer(EntityRegistry.LESSERZOMBIE.get(), LesserZombiePlantEntityRender::new);
         event.registerEntityRenderer(EntityRegistry.LESSERSKELETON.get(), LesserSkeletonPlantEntityRender::new);
-
+         */
     }
 }
