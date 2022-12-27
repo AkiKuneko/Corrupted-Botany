@@ -1,5 +1,11 @@
 package com.eternalive.corruptedbotany;
 
+import com.eternalive.corruptedbotany.entities.client.renders.LesserSkeletonPlantEntityRender;
+import com.eternalive.corruptedbotany.entities.client.renders.LesserZombiePlantEntityRender;
+import com.eternalive.corruptedbotany.registers.BlockRegistry;
+import com.eternalive.corruptedbotany.registers.EntityRegistry;
+import com.eternalive.corruptedbotany.registers.ItemRegistry;
+import com.eternalive.corruptedbotany.registers.SoundRegistry;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -32,10 +38,10 @@ public class CorruptedBotany
     {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        //ItemRegistry.register(eventBus);
-        //BlockRegistry.register(eventBus);
-       // EntityRegistry.register(eventBus);
-       // SoundRegistry.register(eventBus);
+        ItemRegistry.register(eventBus);
+        BlockRegistry.register(eventBus);
+        EntityRegistry.register(eventBus);
+        SoundRegistry.register(eventBus);
 
 
 
@@ -63,13 +69,12 @@ public class CorruptedBotany
         EntityRenderers.register(EntityRegistry.LESSERZOMBIE.get(), LesserZombiePlantEntityRender::new);
         EntityRenderers.register(EntityRegistry.LESSERSKELETON.get(), LesserSkeletonPlantEntityRender::new);
          */
-
     }
 
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        /*
+
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_ZOMBIE_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_SKELETON_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.LESSER_CORRUPTED_PLANT.get(), RenderType.cutout());
@@ -77,7 +82,7 @@ public class CorruptedBotany
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.CORRUPTED_SKELETON_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.CORRUPTED_ZOMBIE_PLANT.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockRegistry.CORRUPTED_CREEPER_PLANT.get(), RenderType.cutout());
-         */
+
         // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
        // LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
@@ -118,5 +123,6 @@ public class CorruptedBotany
             LOGGER.info("Hello from the Earth Inc crew! (we're registering our blocks)");
         }
          */
+
     }
 }
