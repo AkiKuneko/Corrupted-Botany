@@ -1,18 +1,16 @@
 package com.eternalive.corruptedbotany.api.events;
 
-import com.ethinc.corruptedbotany.CorruptedBotany;
-import com.ethinc.corruptedbotany.api.events.lootinjection.MinEssenceInject;
-import com.ethinc.corruptedbotany.entities.LesserSkeletonPlantEntity;
-import com.ethinc.corruptedbotany.entities.LesserZombiePlantEntity;
-import com.ethinc.corruptedbotany.entities.client.model.LesserSkeletonPlantEntityModel;
-import com.ethinc.corruptedbotany.entities.client.model.LesserZombiePlantEntityModel;
-import com.ethinc.corruptedbotany.entities.client.renders.LesserSkeletonPlantEntityRender;
-import com.ethinc.corruptedbotany.entities.client.renders.LesserZombiePlantEntityRender;
-import com.ethinc.corruptedbotany.registers.EntityRegistry;
+import com.eternalive.corruptedbotany.CorruptedBotany;
+import com.eternalive.corruptedbotany.api.events.lootinjection.MinEssenceInject;
+import com.eternalive.corruptedbotany.entities.LesserSkeletonPlantEntity;
+import com.eternalive.corruptedbotany.entities.LesserZombiePlantEntity;
+import com.eternalive.corruptedbotany.entities.client.model.LesserSkeletonPlantEntityModel;
+import com.eternalive.corruptedbotany.entities.client.model.LesserZombiePlantEntityModel;
+import com.eternalive.corruptedbotany.entities.client.renders.LesserSkeletonPlantEntityRender;
+import com.eternalive.corruptedbotany.entities.client.renders.LesserZombiePlantEntityRender;
+import com.eternalive.corruptedbotany.registers.EntityRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,6 +19,7 @@ import javax.annotation.Nonnull;
 
 @Mod.EventBusSubscriber(modid = CorruptedBotany.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CBEvenBus {
+    /*
     @SubscribeEvent
     public static void registerInjectsSerializers(@Nonnull final RegistryEvent.Register<GlobalLootModifierSerializer<?>> event)
     {
@@ -28,6 +27,7 @@ public class CBEvenBus {
                 new MinEssenceInject.Serializer().setRegistryName(new ResourceLocation(CorruptedBotany.MOD_ID, "min_ess_inj"))
         );
     }
+     */
 
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event){

@@ -1,7 +1,7 @@
 package com.eternalive.corruptedbotany.registers;
 
-import com.ethinc.corruptedbotany.CorruptedBotany;
-import com.ethinc.corruptedbotany.api.CBCreativeTab;
+import com.eternalive.corruptedbotany.CorruptedBotany;
+import com.eternalive.corruptedbotany.api.CBCreativeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.RecordItem;
@@ -82,9 +82,11 @@ public class ItemRegistry {
             () -> new Item(new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB)));
 
     //disc's
+    /*
     public static final RegistryObject<Item> MIASMADISC = ITEMS.register("miasma_disc",
             () -> new RecordItem(4, SoundRegistry.MIASMA,
                     new Item.Properties().tab(CBCreativeTab.CB_MODE_TAB).stacksTo(1)));
+     */
 
 
 

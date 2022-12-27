@@ -1,9 +1,9 @@
 package com.eternalive.corruptedbotany.blocks.plants;
 
-import com.ethinc.corruptedbotany.entities.LesserZombiePlantEntity;
-import com.ethinc.corruptedbotany.registers.BlockRegistry;
-import com.ethinc.corruptedbotany.registers.EntityRegistry;
-import com.ethinc.corruptedbotany.registers.ItemRegistry;
+import com.eternalive.corruptedbotany.entities.LesserZombiePlantEntity;
+import com.eternalive.corruptedbotany.registers.BlockRegistry;
+import com.eternalive.corruptedbotany.registers.EntityRegistry;
+import com.eternalive.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.BlockGetter;

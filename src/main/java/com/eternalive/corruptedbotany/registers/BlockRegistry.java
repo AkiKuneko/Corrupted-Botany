@@ -1,8 +1,8 @@
 package com.eternalive.corruptedbotany.registers;
 
-import com.ethinc.corruptedbotany.CorruptedBotany;
-import com.ethinc.corruptedbotany.api.CBCreativeTab;
-import com.ethinc.corruptedbotany.blocks.plants.*;
+import com.eternalive.corruptedbotany.CorruptedBotany;
+import com.eternalive.corruptedbotany.api.CBCreativeTab;
+import com.eternalive.corruptedbotany.blocks.plants.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;

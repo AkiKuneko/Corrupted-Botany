@@ -20,7 +20,7 @@ public class LesserSkeletonPlantEntity extends Monster {
     }
 
 
-    @Override
+    //@Override
     protected int getExperienceReward(Player player) {
         return 2;
     }

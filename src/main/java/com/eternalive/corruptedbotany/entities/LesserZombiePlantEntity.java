@@ -18,7 +18,7 @@ public class LesserZombiePlantEntity extends Monster {
         super(entityType, level);
     }
 
-    @Override
+    //@Override
     protected int getExperienceReward(Player p_21511_) {
         return 2;
     }

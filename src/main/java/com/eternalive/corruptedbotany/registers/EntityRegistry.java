@@ -1,8 +1,8 @@
 package com.eternalive.corruptedbotany.registers;
 
-import com.ethinc.corruptedbotany.CorruptedBotany;
-import com.ethinc.corruptedbotany.entities.LesserSkeletonPlantEntity;
-import com.ethinc.corruptedbotany.entities.LesserZombiePlantEntity;
+import com.eternalive.corruptedbotany.CorruptedBotany;
+import com.eternalive.corruptedbotany.entities.LesserSkeletonPlantEntity;
+import com.eternalive.corruptedbotany.entities.LesserZombiePlantEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -14,7 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class EntityRegistry {
 
     public static final DeferredRegister<EntityType<?>> ENTITIES =
-            DeferredRegister.create(ForgeRegistries.ENTITIES, CorruptedBotany.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, CorruptedBotany.MOD_ID); //check again
 
     public static final RegistryObject<EntityType<LesserZombiePlantEntity>> LESSERZOMBIE = ENTITIES.register("lesser_zombie",
             () -> EntityType.Builder.of(LesserZombiePlantEntity::new, MobCategory.MONSTER)

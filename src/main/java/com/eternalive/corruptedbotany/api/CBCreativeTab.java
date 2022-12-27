@@ -1,6 +1,6 @@
 package com.eternalive.corruptedbotany.api;
 
-import com.ethinc.corruptedbotany.registers.ItemRegistry;
+import com.eternalive.corruptedbotany.registers.ItemRegistry;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 

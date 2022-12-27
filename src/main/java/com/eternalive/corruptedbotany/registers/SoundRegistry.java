@@ -1,6 +1,6 @@
 package com.eternalive.corruptedbotany.registers;
 
-import com.ethinc.corruptedbotany.CorruptedBotany;
+import com.eternalive.corruptedbotany.CorruptedBotany;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
