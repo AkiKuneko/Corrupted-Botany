@@ -1,23 +1,25 @@
 {
-  "itemGroup.cbmodtab": "Corrupted Botany",
-  
-  "item.corruptedbotany.minuscule_essence": "Minuscule Essence",
-  "item.corruptedbotany.lesser_essence": "Lesser Essence",
-  "item.corruptedbotany.corrupted_essence": "Corrupted Essence",
-  "item.corruptedbotany.lesser_corrupted_seed": "Lesser Corrupted Seed",
-  "item.corruptedbotany.corrupted_seed": "Corrupted Seed",
-  "item.corruptedbotany.lesser_skeleton_seed": "Lesser Skeleton Seeds",
-  "item.corruptedbotany.lesser_zombie_seed": "Lesser Zombie Seeds",
-  "item.corruptedbotany.corrupted_zombie_seed": "Corrupted Zombie Seeds",
-  "item.corruptedbotany.corrupted_skeleton_seed": "Corrupted Skeleton Seeds",
-  "item.corruptedbotany.corrupted_spider_seed": "Corrupted Spider Seeds",
-  "item.corruptedbotany.corrupted_creeper_seed": "Corrupted Creeper Seeds",
-  "item.corruptedbotany.corrupted_bone_meal": "Corrupted Bone Meal",
-  "item.corruptedbotany.miasma_disc": "Miasma Disc",
-  "item.corruptedbotany.miasma_disc.desc": "Miasma by KunekoDark",
+  "item.corruptedbotany.tier_1_zombie_seed": "Malicious Zombie Seed",
+  "item.corruptedbotany.tier_2_zombie_seed": "Melancholy Zombie Seed",
+  "item.corruptedbotany.tier_1_essence": "Melancholy Essence",
+  "item.corruptedbotany.tier_2_essence": "Malicious Essence",
+  "item.corruptedbotany.tier_0_essence": "Dormant Essence",
+  "item.corruptedbotany.tier_3_essence": "Corrupt Essence",
+  "item.corruptedbotany.tier_4_essence": "Malevolent Essence",
+  "item.corruptedbotany.tier_5_essence": "Evil Essence",
+  "item.corruptedbotany.tier_6_essence": "Awakened Evil Essence",
+  "item.corruptedbotany.bone_dust": "Bone Dust",
+  "item.corruptedbotany.bone_ash": "Bone Ashes",
+  "item.corruptedbotany.zombie_dna": "Zombie Plant DNA",
+  "item.corruptedbotany.spider_dna": "Spider Plant DNA",
+  "item.corruptedbotany.creeper_dna": "Creeper Plant DNA",
+  "item.corruptedbotany.skeleton_dna": "Skeleton Plant DNA",
 
-  "block.corruptedbotany.lesser_soil": "Lesser Soil",
-  "block.corruptedbotany.corrupted_soil": "Corrupted Soil"
+  "tooltip.corruptbotany.tier_1_table.tooltip": "\u00A74This block is INCREDIBLY unusable and a WIP!!! (it literally does nothing)",
 
+  "gui.corruptedbotany.tier_1_table_screen": "Dormant Work Table (name is a wip)",
+  "container.corruptedbotany.tier_1_table_block": "Dormany Work Table (WIP NAME)",
+
+  "creativetab.corruptedbotany_tab": "Corrupted Botany"
 
 }
